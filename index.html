@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Port &amp; City · Marseille and its port</title>
+<meta name="pc-title" data-en="Port & City · Marseille and its port" data-fr="Port & City · Marseille et son port">
+<meta name="description" content="A neutral, sourced story about the port of Marseille Fos for the people of Marseille: jobs, traffic, air, land and the points people disagree on.">
+<script>(function(){var b=(navigator.language||'').slice(0,2)==='fr'?'fr':'en',l=b;try{l=JSON.parse(localStorage.getItem('pc-lang'))||b}catch(e){}document.documentElement.dataset.lang=l;document.documentElement.lang=l})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home" class="dark-top">
+
+<section class="hero" id="top">
+  <div class="hero-bg" id="heroBg" style="background-image:url('img/marseille-ports.jpg')"></div>
+  <p class="credit">Photo: Christian Gebhardt, <a href="https://commons.wikimedia.org/wiki/File:20211113.Ports_of_Marseille.-019.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0</p>
+  <div class="wrap">
+    <p class="eyebrow" data-scramble><span data-l="en">A story in six chapters · Marseille</span><span data-l="fr">Un récit en six chapitres · Marseille</span></p>
+    <h1><span data-l="en">Marseille and <em>its port</em>.</span><span data-l="fr">Marseille et <em>son port</em>.</span></h1>
+    <p class="lead"><span data-l="en">What does a big port give its city, and what does it cost? A neutral story for the people of Marseille: the figures with their sources, the arguments with their authors.</span><span data-l="fr">Qu’apporte un grand port à sa ville, et que lui coûte-t-il ? Un récit neutre pour les Marseillais : les chiffres avec leurs sources, les arguments avec leurs auteurs.</span></p>
+    <div class="cta">
+      <a class="pill solid" href="port-city.html"><span data-l="en">Begin the story →</span><span data-l="fr">Commencer le récit →</span></a>
+      <button class="pill" type="button" onclick="openMenu()"><span data-l="en">Choose a chapter ▾</span><span data-l="fr">Choisir un chapitre ▾</span></button>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-in" id="marquee"></div></div>
+</section>
+
+<main>
+<!-- the question and the rules of the story -->
+<section class="sec"><div class="wrap home-q">
+  <div class="reveal">
+    <p class="eyebrow" data-scramble><span data-l="en">The question</span><span data-l="fr">La question</span></p>
+    <div class="bubble"><span data-l="en">“I see the ships from my window every day. What do they actually bring to my city, and what do they cost us?”</span><span data-l="fr">« Je vois les navires de ma fenêtre tous les jours. Qu’apportent-ils vraiment à ma ville, et que nous coûtent-ils ? »</span>
+      <small><span data-l="en">A question any Marseillais might ask</span><span data-l="fr">Une question que tout Marseillais peut se poser</span></small></div>
+  </div>
+  <div class="reveal">
+    <h2 style="font-size:clamp(1.6rem,3vw,2.3rem);margin-bottom:18px"><span data-l="en">How this story is told</span><span data-l="fr">Comment ce récit est raconté</span></h2>
+    <div class="principles">
+      <div class="f"><i>F</i><p style="margin:0"><b><span data-l="en">Facts come from official sources</span><span data-l="fr">Les faits viennent de sources officielles</span></b><span><span data-l="en">The port authority, INSEE, AtmoSud, the State, the EU. Every figure names its source and date.</span><span data-l="fr">Le port, l’INSEE, AtmoSud, l’État, l’Union européenne. Chaque chiffre cite sa source et sa date.</span></span></p></div>
+      <div class="p"><i>P</i><p style="margin:0"><b><span data-l="en">Positions are always attributed</span><span data-l="fr">Les positions sont toujours attribuées</span></b><span><span data-l="en">Who says what, and when: the port, the city, NGOs, residents, the cruise industry.</span><span data-l="fr">Qui dit quoi, et quand : le port, la ville, les ONG, les habitants, le secteur de la croisière.</span></span></p></div>
+      <div class="n"><i>N</i><p style="margin:0"><b><span data-l="en">No side is taken</span><span data-l="fr">Aucun camp n’est pris</span></b><span><span data-l="en">Antwerp-Bruges appears only as a mirror, to put Marseille’s figures in perspective.</span><span data-l="fr">Anvers-Bruges n’apparaît que comme un miroir, pour mettre en perspective les chiffres de Marseille.</span></span></p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- interactive: what do you want to know -->
+<section class="sec dark" id="chapters"><div class="wrap">
+  <div class="sec-head split reveal">
+    <div><p class="eyebrow" data-scramble><span data-l="en">Six chapters</span><span data-l="fr">Six chapitres</span></p>
+      <h2><span data-l="en">What do you want to know?</span><span data-l="fr">Que voulez-vous savoir ?</span></h2></div>
+    <p class="lead"><span data-l="en">Pick a question: we light up the chapter that answers it, with one figure to start. Or read the six chapters in order, like a story.</span><span data-l="fr">Choisissez une question : nous éclairons le chapitre qui y répond, avec un premier chiffre. Ou lisez les six chapitres dans l’ordre, comme une histoire.</span></p>
+  </div>
+  <div class="picker reveal" id="picker" role="group" aria-label="Questions"></div>
+  <div class="answer" id="answer" aria-live="polite"></div>
+  <div class="chapters" id="chapterCards"></div>
+</div></section>
+
+<!-- why Antwerp -->
+<section class="sec"><div class="wrap why-antwerp">
+  <figure class="figure reveal"><img src="img/antwerp-cranes.jpg" alt="Container cranes at dusk in the Port of Antwerp" data-fr-alt="Portiques à conteneurs au crépuscule dans le port d’Anvers" loading="lazy">
+    <figcaption id="cranesCredit"></figcaption></figure>
+  <div class="reveal">
+    <p class="eyebrow" data-scramble><span data-l="en">A mirror, not a rival</span><span data-l="fr">Un miroir, pas un rival</span></p>
+    <h2><span data-l="en">Why Antwerp appears in this story</span><span data-l="fr">Pourquoi Anvers apparaît dans ce récit</span></h2>
+    <p class="lead" style="margin-top:16px"><span data-l="en">Antwerp-Bruges is one of Europe’s largest ports, also squeezed between a city, industry and residents. In each chapter, a short “mirror” box shows how Antwerp handles the same question. It helps read Marseille’s figures; it is not a ranking.</span><span data-l="fr">Anvers-Bruges est l’un des plus grands ports d’Europe, lui aussi serré entre une ville, une industrie et des habitants. Dans chaque chapitre, un court encadré « miroir » montre comment Anvers traite la même question. Il aide à lire les chiffres de Marseille ; ce n’est pas un classement.</span></p>
+    <div class="stats">
+      <div class="stat"><b data-count="74" data-suf=" Mt">74 Mt</b><span><span data-l="en">handled at Marseille Fos in 2025</span><span data-l="fr">traitées à Marseille Fos en 2025</span></span><small>GPMM</small></div>
+      <div class="stat"><b data-count="266.5" data-dec="1" data-suf=" Mt">266.5 Mt</b><span><span data-l="en">handled at Antwerp-Bruges in 2025</span><span data-l="fr">traitées à Anvers-Bruges en 2025</span></span><small>Port of Antwerp-Bruges</small></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- feedback teaser -->
+<section class="sec tint"><div class="wrap">
+  <div class="sec-head split reveal">
+    <div><p class="eyebrow" data-scramble><span data-l="en">Readers’ feedback</span><span data-l="fr">Retours des lecteurs</span></p>
+      <h2><span data-l="en">What visitors say</span><span data-l="fr">Ce qu’en disent les visiteurs</span></h2></div>
+    <p class="lead"><span data-l="en">After reading, tell us what you learned or what was unclear. Your feedback helps us improve the story.</span><span data-l="fr">Après votre lecture, dites-nous ce que vous avez appris ou ce qui était flou. Vos retours nous aident à améliorer le récit.</span></p>
+  </div>
+  <div class="fb-teaser" id="fbTeaser"></div>
+  <div class="cta"><a class="pill navy" href="feedback.html"><span data-l="en">Read all feedback and add yours →</span><span data-l="fr">Lire tous les retours et ajouter le vôtre →</span></a></div>
+</div></section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/feedback-store.js"></script>
+<script>
+/* marquee */
+const MQ = [[{ en: '74 Mt', fr: '74 Mt' }, { en: 'of goods handled in 2025', fr: 'de marchandises traitées en 2025' }], [num(42600), { en: 'salaried jobs in the port cluster (2019)', fr: 'emplois salariés du cluster portuaire (2019)' }], [{ en: '2.6 M', fr: '2,6 M' }, { en: 'cruise passengers in 2025', fr: 'croisiéristes en 2025' }], [{ en: '56%', fr: '56 %' }, { en: 'of Marseille’s ultrafine particles come from ships', fr: 'des particules ultrafines de Marseille viennent des navires' }], [{ en: '108 MW', fr: '108 MW' }, { en: 'of shore power in 2026', fr: 'd’électricité à quai en 2026' }], [{ en: '10,000 ha', fr: '10 000 ha' }, { en: 'of port land at Fos', fr: 'de domaine portuaire à Fos' }]];
+const mq = MQ.map(([b, s]) => `<div><b>${L(b)}</b><span>${L(s)}</span></div>`).join('');
+$('#marquee').innerHTML = mq + mq;
+
+/* hero parallax: follows the mouse and the scroll */
+const bg = $('#heroBg');
+let mx = 0, my = 0;
+function move() { if (scrollY < innerHeight) bg.style.transform = `translate(${mx}px, ${my + scrollY * .25}px) scale(1.06)`; }
+if (!reduced) {
+  addEventListener('mousemove', e => { mx = (e.clientX / innerWidth - .5) * 18; my = (e.clientY / innerHeight - .5) * 12; move(); }, { passive: true });
+  addEventListener('scroll', move, { passive: true });
+}
+
+/* chapter cards */
+const CARD = {
+  port:    { img: 'img/mucem-port.jpg', k: { en: '1968', fr: '1968' }, kl: { en: 'first ship at Fos', fr: 'premier navire à Fos' } },
+  jobs:    { img: 'img/docks-joliette.jpg', k: num(42600), kl: { en: 'salaried jobs', fr: 'emplois salariés' } },
+  traffic: { img: 'img/ferry-marseille.jpg', k: { en: '74 Mt', fr: '74 Mt' }, kl: { en: 'goods in 2025', fr: 'marchandises en 2025' } },
+  air:     { img: 'img/msc-world-europa.jpg', k: { en: '56%', fr: '56 %' }, kl: { en: 'ultrafine particles', fr: 'particules ultrafines' } },
+  land:    { img: 'img/fos-industry.jpg', k: { en: '77%', fr: '77 %' }, kl: { en: 'of investment at Fos', fr: 'des investissements à Fos' } },
+  debates: { img: '', k: { en: '6', fr: '6' }, kl: { en: 'contested points', fr: 'points contestés' } }
+};
+const read = store.get('pc-read', []);
+$('#chapterCards').innerHTML = CHAPTERS.map(c => `<a class="chcard reveal${c.id === 'debates' ? ' debate' : ''}" href="${c.href}" data-id="${c.id}">
+  ${CARD[c.id].img ? `<img src="${CARD[c.id].img}" alt="" loading="lazy">` : ''}
+  <span class="n">${c.ch}</span><span class="k"><b>${L(CARD[c.id].k)}</b>${L(CARD[c.id].kl)}</span>
+  ${read.includes(c.id) ? `<span class="read-badge">${L({ en: '✓ read', fr: '✓ lu' })}</span>` : ''}
+  <h3>${L(c.t)}</h3><p>${L(c.q)}</p><span class="go">${L({ en: 'Read the chapter →', fr: 'Lire le chapitre →' })}</span></a>`).join('');
+
+/* gentle 3D tilt on the cards */
+if (!reduced && matchMedia('(hover: hover)').matches) $$('.chcard').forEach(card => {
+  card.addEventListener('mousemove', e => { const r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    card.style.transform = `rotateY(${x * 8}deg) rotateX(${-y * 8}deg)`; });
+  card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+});
+
+/* question picker */
+const QS = [
+  { q: { en: 'How did it all start?', fr: 'Comment tout a commencé ?' }, id: 'port', b: { en: '1968', fr: '1968' }, a: { en: 'The first ship reaches the brand-new port of Fos, west of Marseille. Since then the port has had two faces: the city and the industrial zone.', fr: 'Le premier navire arrive au tout nouveau port de Fos, à l’ouest de Marseille. Depuis, le port a deux visages : la ville et la zone industrielle.' } },
+  { q: { en: 'Does the port give jobs to people here?', fr: 'Le port donne-t-il du travail aux gens d’ici ?' }, id: 'jobs', b: num(42600), a: { en: 'salaried jobs in the port’s industrial cluster at the end of 2019, counted by INSEE. In Fos-sur-Mer, 85% of private-sector jobs depend on it.', fr: 'emplois salariés dans le cluster industrialo-portuaire fin 2019, comptés par l’INSEE. À Fos-sur-Mer, 85 % des emplois privés en dépendent.' } },
+  { q: { en: 'What do the ships carry?', fr: 'Que transportent les navires ?' }, id: 'traffic', b: { en: '74 Mt', fr: '74 Mt' }, a: { en: 'of goods in 2025, two thirds of it liquid bulk: oil products, gas and chemicals. Plus 2.6 million cruise passengers.', fr: 'de marchandises en 2025, aux deux tiers des vracs liquides : produits pétroliers, gaz et chimie. Plus 2,6 millions de croisiéristes.' } },
+  { q: { en: 'Is the air near the port bad?', fr: 'L’air près du port est-il mauvais ?' }, id: 'air', b: { en: '56%', fr: '56 %' }, a: { en: 'of ultrafine particles in Marseille come from ships. For nitrogen oxides, road traffic comes first. It depends on the pollutant.', fr: 'des particules ultrafines de Marseille viennent des navires. Pour les oxydes d’azote, le trafic routier arrive en tête. Tout dépend du polluant.' } },
+  { q: { en: 'What will the port build next?', fr: 'Que va construire le port ?' }, id: 'land', b: { en: '€1–1.3 bn', fr: '1 à 1,3 Md€' }, a: { en: 'of investment planned for 2025–2029, three times the previous plan. 77% goes to the West basins at Fos.', fr: 'd’investissements prévus pour 2025–2029, trois fois le plan précédent. 77 % vont aux bassins Ouest, à Fos.' } },
+  { q: { en: 'Why do people argue about cruise ships?', fr: 'Pourquoi se dispute-t-on sur les croisières ?' }, id: 'debates', b: { en: '6', fr: '6' }, a: { en: 'contested points, with the facts on one side and each organisation’s position on the other: cruise limits, air, shore power, LNG, jobs, health in Fos.', fr: 'points contestés, avec les faits d’un côté et la position de chaque organisation de l’autre : croisières, air, branchement à quai, GNL, emplois, santé à Fos.' } }
+];
+const picker = $('#picker'), answer = $('#answer'), grid = $('#chapterCards');
+picker.innerHTML = QS.map((x, i) => `<button type="button" aria-pressed="false" data-i="${i}">${L(x.q)}</button>`).join('');
+function pick(i) {
+  const x = QS[i], c = CHAPTERS.find(c => c.id === x.id);
+  $$('button', picker).forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.i === i)));
+  grid.classList.add('dim');
+  $$('.chcard', grid).forEach(card => card.classList.toggle('lit', card.dataset.id === x.id));
+  answer.innerHTML = `<p><b>${L(x.b)}</b>${L(x.a)}</p><a class="pill solid" href="${c.href}">${L({ en: 'Go to chapter', fr: 'Aller au chapitre' })} ${c.ch} →</a>`;
+}
+$$('button', picker).forEach(b => b.addEventListener('click', () => pick(+b.dataset.i)));
+answer.innerHTML = `<p style="color:var(--pastel-300)">${L({ en: 'Pick a question above to see where the answer is.', fr: 'Choisissez une question ci-dessus pour voir où se trouve la réponse.' })}</p>`;
+
+$('#cranesCredit').innerHTML = `${L(PHOTOS.cranes.t)}. ${photoCredit('cranes')}`;
+
+/* latest feedback */
+function teaser(posted) {
+const fb = [...posted, ...FEEDBACK_SEED].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+$('#fbTeaser').innerHTML = fb.map(f => `<div class="fb-card reveal"><header><span class="avatar">${esc(f.name[0].toUpperCase())}</span><div><div class="nm">${esc(f.name)}</div><div class="meta">${typeof f.role === 'object' ? L(f.role) : esc(f.role || '')}</div></div><span class="st" aria-label="${f.stars}/5">${'★'.repeat(f.stars)}</span></header><p>${typeof f.text === 'object' ? L(f.text) : esc(f.text)}</p></div>`).join('');
+$$('#fbTeaser .reveal').forEach(el => io.observe(el));
+}
+teaser([]);
+FB.list().then(teaser).catch(() => {});
+</script>
+</body>
+</html>
